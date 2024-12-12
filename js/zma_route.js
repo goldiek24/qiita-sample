@@ -59,7 +59,7 @@ ZMALoader.setOnLoad(function (mapOptions, error) {
                         const routeLine = new ZDC.Polyline(
                             decodedPath,
                             {
-                                color: '#ff4447',
+                                color: '#00cffa',
                                 width: 5,
                                 opacity: 0.7
                             }
