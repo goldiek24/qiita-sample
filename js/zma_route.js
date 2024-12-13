@@ -7,8 +7,11 @@ ZMALoader.setOnLoad(function (mapOptions, error) {
     const mapElement = document.getElementById('ZMap');
 
     // 地図の初期設定
-    mapOptions.center = new ZDC.LatLng(35.681406, 139.767132); // 東京駅
-    mapOptions.zoom = 13;
+//    mapOptions.center = new ZDC.LatLng(35.681406, 139.767132); // 東京駅
+    mapOptions.center = new ZDC.LatLng(35.67637455789411, 139.67320797476813); // chocoZAP幡ヶ谷二丁目
+    mapOptions.zoom = 18;
+    mapOptions.mouseWheelReverseZoom = true; // ★マウスホイールのズーム方向の反転を指定
+
 
     const map = new ZDC.Map(mapElement, mapOptions, function() {
         // 地図生成成功時の処理
@@ -18,8 +21,11 @@ ZMALoader.setOnLoad(function (mapOptions, error) {
         map.addControl(new ZDC.Compass('top-right'));
         map.addControl(new ZDC.ScaleBar('bottom-left'));
 
-        const start = new ZDC.LatLng(35.66553545293289, 139.69776574694126);//渋谷区役所
-        const end = new ZDC.LatLng(35.71723402927921, 139.85809352602368); //新小岩駅
+//        const start = new ZDC.LatLng(35.66553545293289, 139.69776574694126);//渋谷区役所
+//        const end = new ZDC.LatLng(35.71723402927921, 139.85809352602368); //新小岩駅
+
+        const start = new ZDC.LatLng(35.67637455789411, 139.67320797476813); //chocoZAP幡ヶ谷二丁目
+        const end = new ZDC.LatLng(35.676596634830496, 139.6710864454428); //正専寺
 
         const startMarker = new ZDC.Marker(start);
         const endMarker = new ZDC.Marker(end);
