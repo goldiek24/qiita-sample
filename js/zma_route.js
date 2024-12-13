@@ -26,7 +26,8 @@ ZMALoader.setOnLoad(function (mapOptions, error) {
         map.addWidget(startMarker);
         map.addWidget(endMarker);
 
-        const routeUrl = `https://test-web.zmaps-api.com/route/route_mbn/drive_ptp?search_type=1&from=${start.lng},${start.lat}&to=${end.lng},${end.lat}&regulation_type=121100&toll_type=large`;
+//        const routeUrl = `https://test-web.zmaps-api.com/route/route_mbn/drive_ptp?search_type=1&from=${start.lng},${start.lat}&to=${end.lng},${end.lat}&regulation_type=121100&toll_type=large`;
+        const routeUrl = `https://test-web.zmaps-api.com/route/route_mbn/drive_ptp?search_type=1&from=${start.lng},${start.lat}&to=${end.lng},${end.lat}`;
 
         fetch(routeUrl, {
             method: 'GET',
