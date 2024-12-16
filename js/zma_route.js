@@ -8,8 +8,8 @@ ZMALoader.setOnLoad(function (mapOptions, error) {
 
     // 地図の初期設定
 //    mapOptions.center = new ZDC.LatLng(35.681406, 139.767132); // 東京駅
-    mapOptions.center = new ZDC.LatLng(35.67637455789411, 139.67320797476813); // chocoZAP幡ヶ谷二丁目
-    mapOptions.zoom = 18;
+    mapOptions.center = new ZDC.LatLng(35.637085839175484, 139.6707547792902); //日本大学認定こども園
+    mapOptions.zoom = 17;
     mapOptions.mouseWheelReverseZoom = true; // ★マウスホイールのズーム方向の反転を指定
 
 
@@ -24,8 +24,8 @@ ZMALoader.setOnLoad(function (mapOptions, error) {
 //        const start = new ZDC.LatLng(35.66553545293289, 139.69776574694126);//渋谷区役所
 //        const end = new ZDC.LatLng(35.71723402927921, 139.85809352602368); //新小岩駅
 
-        const start = new ZDC.LatLng(35.67637455789411, 139.67320797476813); //chocoZAP幡ヶ谷二丁目
-        const end = new ZDC.LatLng(35.676596634830496, 139.6710864454428); //正専寺
+        const start = new ZDC.LatLng(35.637085839175484, 139.6707547792902); //日本大学認定こども園
+        const end = new ZDC.LatLng(35.63448502797939, 139.66985552394794); //青葉学園野沢こども園
 
         const startMarker = new ZDC.Marker(start);
         const endMarker = new ZDC.Marker(end);
